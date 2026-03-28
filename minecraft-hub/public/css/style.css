@@ -1,0 +1,82 @@
+/* General Body Styles */
+body {
+    background-color: #36393f;
+    color: #dcddde;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Navbar Color */
+.bg-dark-custom {
+    background-color: #2f3136 !important;
+    border-bottom: 2px solid #202225;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #2E8B57 !important;
+}
+
+/* Homepage Hero Section */
+.hero-section {
+    background: url('https://www.minecraft.net/content/dam/games/minecraft/key-art/Caves-and-Cliffs_Key-Art_960x540.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 0.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Homepage Category Cards */
+.category-card {
+    background-color: #40444b;
+    border: 1px solid #2f3136;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.category-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.category-card .card-body {
+    padding: 2rem;
+}
+
+/* Category Page Item Cards */
+.item-card {
+    background-color: #40444b;
+    border: 1px solid #2f3136;
+    color: #dcddde;
+    transition: transform 0.2s ease-in-out;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-card .card-title {
+    color: #ffffff;
+}
+
+.item-card .btn-primary {
+    background-color: #2E8B57; /* A Minecraft green */
+    border-color: #2E8B57;
+}
+
+.item-card .btn-primary:hover {
+    background-color: #256d44;
+    border-color: #256d44;
+}
+
+/* Footer */
+footer.bg-dark-custom {
+    border-top: 2px solid #202225;
+}
