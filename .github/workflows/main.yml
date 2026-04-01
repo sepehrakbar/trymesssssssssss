@@ -1,0 +1,15 @@
+name: DNS Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-dns:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install dig
+      run: sudo apt-get update && sudo apt-get install -y dnsutils
+
+    - name: Test DNS Query
+      run: dig @${{ secrets.VPS_IP }} id.client TXT +short
